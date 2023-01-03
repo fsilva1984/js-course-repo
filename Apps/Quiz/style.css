@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;1,500&display=swap');
+
 .main {
 
   border: 1px solid #79808571;
@@ -23,15 +25,23 @@
 
 
 .title h1 {
-
+  font-family: 'Montserrat', sans-serif;
   font-size: 3rem;
 }
 
 
-.checkup {
-
+.A {
   cursor: pointer;
 }
+
+.B {
+  cursor: pointer;
+}
+
+.form-check-label {
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 
 .bt {
@@ -61,6 +71,7 @@
 
   text-align: center;
   padding: 8px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .score {
