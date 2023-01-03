@@ -1,0 +1,68 @@
+.main {
+
+  border: 1px solid #79808571;
+  height: 100vh auto;
+  width: 65vw;
+  margin-left: 15.5vw;
+  box-sizing: border-box;
+}
+
+
+@media(max-width: 500px) {
+  .main {
+    width: auto;
+  }
+}
+
+
+
+.title {
+
+  border: 1px solid #79808571;
+}
+
+
+.title h1 {
+
+  font-size: 3rem;
+}
+
+
+.checkup {
+
+  cursor: pointer;
+}
+
+
+.bt {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 8vh;
+  margin-bottom: 3vh;
+
+}
+
+
+.div-scores {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 450ms;
+  pointer-events: none;
+  background-color: #393f44;
+}
+
+
+.show {
+  max-height: 25vh;
+}
+
+.h2 {
+
+  text-align: center;
+  padding: 8px;
+}
+
+.score {
+  color: #0d6efd;
+}
