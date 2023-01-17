@@ -12,6 +12,7 @@ const president = {
 
   err() {
     log("Escolha uma das opções e respoda com o numero referente.")
+    return
   },
 
   sarney() {

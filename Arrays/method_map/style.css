@@ -1,0 +1,22 @@
+
+
+*{margin: 0;padding: 0;}
+
+
+body{
+  background-color: rgb(207, 207, 207);
+}
+
+
+.container {
+  border: 1px solid rgba(105, 105, 105, 0.473);
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+.check-item {
+  padding: 8px;
+  margin-left: 15px;
+}
