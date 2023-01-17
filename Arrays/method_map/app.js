@@ -1,3 +1,5 @@
+/*
+
 
 const log = console.log
 
@@ -41,6 +43,9 @@ const showPrice = forSales.map((item, index) => {
 
 
 
+
+*/
+
 const promotions = [
 
   { product: "fogao Dako", price: 580},
@@ -52,20 +57,50 @@ const promotions = [
 ]
 
 
+//store system, get and show promotions
 
-const promoDay = promotions.map(item => {
+const input = document.querySelector("input")
+const bt = document.querySelector("button")
 
- let value = item.price
- let prod = item.product
+const exit = document.querySelector(".exit")
 
- if ( value > 1200 ) {
-    
-  return {prod, value : value - Math.floor((15 * value) / 100)}
- 
- }
+
+bt.addEventListener("click", () => {
+
+
+  let query = input.value
+
+  if (query.length == 0) {
+    exit.innerHTML = `<p>Preencha o campo antes!</p>`
+  }
+  
+  let getProduct
+
+  promotions.map(item => {
+  
+    let value = item.price
+    let prod = item.product
+
+
+    if (query == prod) {
+
+
+      if (value > 1200) {
+  
+        let newValue = value - Math.floor((15 * value) / 100)
+        exit.innerHTML += `<li>${prod} R$ ${newValue}</li>`
+  
+      }
+
+    }
+
+
+  })
+  
+  
 
 })
 
-log(promoDay)
+
 
 
