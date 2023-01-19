@@ -46,60 +46,123 @@ const showPrice = forSales.map((item, index) => {
 
 */
 
-const promotions = [
-
-  { product: "fogao Dako", price: 580},
-  { product: "luminaria Mega Luz", price: 892},
-  { product: "tapete persa", price: 733},
-  { product: "Smart TV", price: 3890},
-  { product: "smartphone Poco", price: 2325}
-
-]
 
 
-//store system, get and show promotions
 
-const input = document.querySelector("input")
+const input = document.querySelector("input").value
 const bt = document.querySelector("button")
-
 const exit = document.querySelector(".exit")
 
 
-bt.addEventListener("click", () => {
+function geladeira() {
+  return [
 
+    {geladeira: "brastemp",price: 3270},
+    {geladeira: "eletrolux",price: 2200},
+    {geladeira: "ge",price: 3000},
+    {geladeira: "lg",price: 4780},
 
-  let query = input.value
+  ].map(item => {
 
-  if (query.length == 0) {
-    exit.innerHTML = `<p>Preencha o campo antes!</p>`
-  }
-  
-  let getProduct
-
-  promotions.map(item => {
-  
-    let value = item.price
-    let prod = item.product
-
-
-    if (query == prod) {
-
-
-      if (value > 1200) {
-  
-        let newValue = value - Math.floor((15 * value) / 100)
-        exit.innerHTML += `<li>${prod} R$ ${newValue}</li>`
-  
-      }
-
-    }
-
-
+    return `${item.geladeira} R$ ${item.price}`
   })
-  
-  
+}
 
-})
+
+
+
+function fogao() {
+  return [
+
+    {fogao: "Dako",price: 1300},
+    {fogao: "Continental",price: 698},
+    {fogao: "Esmaral",price: 800},
+    {fogao: "Prime",price: 790},
+    {fogao: "Brastemp",price: 1900},
+
+  ].map(item => {
+
+    exit.innerHTML += `<ul><li>Fogão ${item.fogao} ${'R$'}${item.price}</li></ul>`
+  })
+}
+
+
+
+
+function smarttv() {
+  return [   
+    {smarttv: "sansung",price: 2900},
+    {smarttv: "lg",price: 1600},
+    {smarttv: "philco",price: 1950},
+    {smarttv: "sanio",price: 2700},
+    {smarttv: "cce",price: 1800},
+
+  ].map(item => {
+
+    return `${item.smarttv} R$ ${item.price}`
+  })
+}
+
+
+
+
+function smartphone() {
+  return [
+    {phone: "poco",price: 2800},
+    {phone: "moto one",price: 1750},
+    {phone: "galaxy note",price: 1970},
+    {phone: "asus",price: 2300},
+    {phone: "lenovo",price: 1800},
+
+  ].map(item => {
+
+    return `${item.phone} R$ ${item.price}`
+  })
+
+}
+ 
+
+
+/*
+lembrete ** o switch case e um mutlipla escolhas
+e nao um  if else
+*/
+
+function getProduct() {
+
+
+if (input == 'fogao') {
+
+
+
+ fogao()
+}
+
+/*
+  switch (input) {
+
+    case 'smartphone':
+      smartphone()
+    break
+
+    case 'smarttv':
+      smarttv()
+    break
+
+    case 'fogao':
+      fogao()
+    break
+
+    case 'geladeira':
+      geladeira()
+    break;
+  }
+  */
+}
+
+
+
+bt.addEventListener("click", getProduct)
 
 
 
