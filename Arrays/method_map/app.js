@@ -49,9 +49,9 @@ const showPrice = forSales.map((item, index) => {
 
 
 
-const input = document.querySelector("input").value
-const bt = document.querySelector("button")
-const exit = document.querySelector(".exit")
+//const inputUser = document.querySelector("#user").value
+//const bt = document.querySelector("button")
+//const exit = document.querySelector(".exit")
 
 
 function geladeira() {
@@ -64,14 +64,16 @@ function geladeira() {
 
   ].map(item => {
 
-    return `${item.geladeira} R$ ${item.price}`
+    console.log(`${item.geladeira} R$ ${item.price}`);
   })
 }
 
 
 
 
+
 function fogao() {
+
   return [
 
     {fogao: "Dako",price: 1300},
@@ -81,8 +83,7 @@ function fogao() {
     {fogao: "Brastemp",price: 1900},
 
   ].map(item => {
-
-    exit.innerHTML += `<ul><li>Fogão ${item.fogao} ${'R$'}${item.price}</li></ul>`
+    console.log(`${item.fogao} R$ ${item.price}`)
   })
 }
 
@@ -99,7 +100,7 @@ function smarttv() {
 
   ].map(item => {
 
-    return `${item.smarttv} R$ ${item.price}`
+    console.log(`${item.smarttv} R$ ${item.price}`);
   })
 }
 
@@ -116,7 +117,7 @@ function smartphone() {
 
   ].map(item => {
 
-    return `${item.phone} R$ ${item.price}`
+    console.log(`${item.phone} R$ ${item.price}`);
   })
 
 }
@@ -128,41 +129,30 @@ lembrete ** o switch case e um mutlipla escolhas
 e nao um  if else
 */
 
-function getProduct() {
+function getProduct(param) {
 
 
-if (input == 'fogao') {
-
-
-
- fogao()
-}
-
-/*
-  switch (input) {
+  switch (param) {
 
     case 'smartphone':
       smartphone()
-    break
+    break;
 
     case 'smarttv':
       smarttv()
-    break
+    break;
 
     case 'fogao':
       fogao()
-    break
+    break;
 
     case 'geladeira':
       geladeira()
     break;
   }
-  */
 }
 
-
-
-bt.addEventListener("click", getProduct)
+getProduct('geladeira')
 
 
 
