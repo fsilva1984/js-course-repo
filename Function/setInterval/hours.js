@@ -1,25 +1,31 @@
 
 
-setInterval(() => { 
+setInterval(hours, 1000)
 
 
-  const tz = new Date()
-  const h = tz.getHours()
-  const m = tz.getMinutes()
-  const s = tz.getSeconds()
+function hours() {
 
-
- 
-  const time = document.getElementById("time")
+  let tz = new Date()
+  let h = tz.getHours()
+  let m = tz.getMinutes()
+  let s = tz.getSeconds()
 
   function zero(x) {
-    x = Number(x)
+
     if (x < 10) {
-      return `0${x}`
+      x = '0' + x
+      return x
+    } else {
+      return x
     }
   }
+ 
+  
+  h = zero(h)
+  m = zero(m)
+  s = zero(s)
+  
+  document.getElementById("time").textContent = h + ":" + m + ":" + s
 
-  time.innerHTML = `${h}:${m}:${s}`
+}
 
-
-},1000)
