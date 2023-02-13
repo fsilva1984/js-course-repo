@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 80vw;
+  height: auto;
+  box-sizing: border-box;
+  border: 1px solid #b9b7b77a;
+}
+
+
+.todo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55vw;
+}
+
+.ul{
+  overflow-y: auto;
+}
+
+.app-header{
+  background-color: rgb(8, 8, 8);
+  height: 40px;
+  width: 50vw;
+}
+.app-footer{
+  background-color: rgb(8, 8, 8);
+  height: 40px;
+  width: 50vw;
+}
+
+.todo-list{
+  padding: 5px;
+  margin: 5px;
+  overflow: auto;
+  background-color: #448eea;
+}
+.todo-list:hover{
+  background-color: #77b1f8;
+  transition: 200ms;
+  box-shadow: 0px 3px 0px rgb(252, 132, 88);
+}
+
+.ul{
+  width: 50vw;
+  border: 1px solid black;
+}
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+.todo-list .fa-trash-can{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 450px){
+  .input-todo{
+    width: 200px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
