@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,700&display=swap');
+
+
+
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   width: 80vw;
   height: auto;
   box-sizing: border-box;
@@ -9,72 +13,83 @@
 }
 
 
-.todo{
+.todo {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 55vw;
 }
 
-.ul{
+.ul {
   overflow-y: auto;
 }
 
-.app-header{
+.app-header {
   background-color: rgb(8, 8, 8);
-  height: 40px;
+  height: 60px;
   width: 50vw;
+  font-family: 'JetBrains Mono', monospace;
+  color: lightgrey;
+  text-align: center;
 }
-.app-footer{
+
+.app-footer {
   background-color: rgb(8, 8, 8);
   height: 40px;
   width: 50vw;
 }
 
-.todo-list{
+.todo-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
   padding: 5px;
   margin: 5px;
+  height: 12vh;
+  font-size: 25px;
+  font-family: 'JetBrains Mono', monospace;
   overflow: auto;
   background-color: #448eea;
 }
-.todo-list:hover{
+
+.todo-list:hover {
   background-color: #77b1f8;
   transition: 200ms;
   box-shadow: 0px 3px 0px rgb(252, 132, 88);
 }
 
-.ul{
+.ul {
   width: 50vw;
   border: 1px solid black;
 }
 
 
-.form{
+.form {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   border: none;
 }
-.todo-list .fa-trash-can{
-  display: flex;
-  flex-direction: column;
-  align-items: end;
+
+.input-todo {
+  height: 10vh;
+  font-size: 25px;
+}
+
+.todo-list .fa-trash-can {
   cursor: pointer;
+  width: 2vw;
+  font-size: 20px;
+  padding: 5px;
+  margin-right: 10px;
+  color: rgb(221, 81, 30);
 }
 
 
-@media screen and (max-width: 450px){
-  .input-todo{
+@media screen and (max-width: 450px) {
+  .input-todo {
     width: 200px;
   }
-  
+
 }
-
-
-
-
-
-
-
-
-
