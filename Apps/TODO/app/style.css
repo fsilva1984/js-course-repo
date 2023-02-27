@@ -62,4 +62,16 @@ button {
   .li {
     width: 100%;
   }
+
+  header {
+    height: 23vh;
+  }
+
+  .form {
+    height: 23vh;
+  }
+
+  .todos-container {
+    margin-top: 25vh;
+  }
 }
