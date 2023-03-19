@@ -1,64 +1,51 @@
 
 // simple recursive function
+const numbers = [23, 45, 17, 90, 72, 13];
 
-function countDown(n){
+function countDown(arr, n){
 
-  if (n -1 > 0) {
+  if (n > 0) {
     
-    countDown(n -1)
+    countDown(arr, n -1)
+    return arr[n -1]
   }
 
-  console.log(n);
+  
 };
 
-countDown(5);
+//console.log(countDown(numbers, numbers.length));
 console.log("------------------------------------------");
 
 /* Iterating Arrays whith recursive function*/
 
-const numbers = [23, 45, 17, 90, 72, 13];
 
+function mult(arr, n) {
+  let num = 0
+  let product = 1
+  if (n <= 0) {
+    /* se o parametro "n" e menor ou igual a 0 
+    a variavel produto menos 1 sera retornado */
 
-function mult(arr, n) {// a funcao e invocada
-  if (n == 0) {
-    n = 1;
-  };
-
-  if (n >= 0) {// se o parametro "n" e maio ou igual a 0
+    return product -1;
+  } else {
     
-    /* Entao log o cada conteudo do array usando como indice 
-    o "n", colocamos menos 1 para que o indice comece em 1 */
-    console.log(arr[n -1]);
-    return// quando o if atestar false o return para a aplicacao
+    /* caso contrario a funcao sera chamada ate que
+    n -1 seja igual a 0 */
+
+
+    mult(arr, n -1)
+    return (n) * arr[n - 1]
+    
+    /* nessa parte da funcao, sera multiplicado o valor
+    contido no indice do arrai replesentado pelo n -1,
+    pelo valor de n */
+ 
   }
 
-  mult(arr, n -1);
 }
 
-//mult(numbers, 0);
-mult(numbers, 0);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(mult(numbers, 0));
+console.log(mult(numbers, 3));
 
 
 
