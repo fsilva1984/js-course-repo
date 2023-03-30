@@ -1,13 +1,13 @@
 
 
 function countdown(n) {
-  
+
 
   if (n <= 0) {
     return [];
   }
-  
-  const arr = countdown(n -1)
+
+  const arr = countdown(n - 1)
   arr.unshift(n)
 
 
@@ -21,37 +21,51 @@ console.log('');
 
 
 
-function rangeOfNumbers(startNum, endNum) {
 
-  let n = Math.floor(Math.random() * (endNum - startNum) + startNum) + 1
 
-  if (n == 20) {
-    return
-  } else {
-    console.log(n);
+
+function rangeOfNumbers(x, y) {
+
+
+  if (x < 1 || y < 1) {
+    return [];
+
+  } else if (x === y) {
+
+    return [x]
   }
 
+  if (x > y) {
+   let arr = rangeOfNumbers(y, x - 1)
+   arr.push(x)
+    return arr;
+
+  } else if (x < y){
+
+    arr = rangeOfNumbers(x, y - 1)
+    arr.push(y)
+    return arr;
+  }
 }
 
-//setInterval(rangeOfNumbers, 800, 10, 20)
+console.log(rangeOfNumbers(30, 20));
 
-//console.log(rangeOfNumbers(20, 10));
+
+
+
 
 
 function countdown(n) {
-  let num = 1
-  if (n <= 0) {
-    return num -1
-  } else {
 
-    countdown(n -1)
+  if (n < 1) {
+    return [];
   }
 
-  console.log(n);
+  return [n, ...countdown(n - 1)];
 
 }
 
-countdown(10)
+console.log(countdown(10));
 
 
 

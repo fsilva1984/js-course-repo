@@ -19,3 +19,10 @@ function rangeOfNumbers(startNum, endNum) {
     return arr;
   }
 };
+
+
+
+
+console.log(rangeOfNumbers(10, 20));
+
+console.log(rangeOfNumbers(20, 10));

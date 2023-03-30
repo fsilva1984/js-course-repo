@@ -13,7 +13,7 @@ function countDown(arr, n){
   
 };
 
-//console.log(countDown(numbers, numbers.length));
+console.log(countDown(numbers, numbers.length));
 console.log("------------------------------------------");
 
 /* Iterating Arrays whith recursive function*/
