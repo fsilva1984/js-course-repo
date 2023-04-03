@@ -1,0 +1,12 @@
+{
+  "name": "exercici00",
+  "version": "1.0.0",
+  "description": "System Modules",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fsilva",
+  "license": "ISC"
+}
