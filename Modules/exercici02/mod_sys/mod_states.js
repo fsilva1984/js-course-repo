@@ -115,34 +115,29 @@ const uf = [
 
 ]
 
+// create elements 'option' with the value of 'unidade federativa'
 
-function states(element) {
 
-  let el = '';
+/*
 
-  for (let i = 0; i < uf.length; i++) {
 
-    el += `<option>${statesBR[i]}</option>`
+  const dataPerson = {
+    name: "",
+    email: "",
+    passwd: "",
+    cep: "",
+    number: "",
+    city: "",
+    adress: "",
+    uf: "",
+    reference: "",
+    state: "",
+
   }
+  
+  let { name, email, passwd, cep, number, city, adress, uf, reference, state } = dataPerson;
 
-  element.innerHTML = `
-  <option selected="">Estado</option>\n
-  ${el}`
-
-}
-
-
-
-function ufBR(y, x){
-
-}
-
-
-
-export { states }
-
-
-
+*/
 
 
 

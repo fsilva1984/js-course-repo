@@ -22,10 +22,10 @@ console.log("-----------------------------------");
 */
 
 const characters = [
-  { id: 03, name: 'Simba' },
-  { id: 02, name: 'Nala' },
-  { id: 01, name: 'Scar' },
-  { id: 04, name: 'Mufasa' }
+  { id: 3, name: 'Simba' },
+  { id: 2, name: 'Nala' },
+  { id: 1, name: 'Scar' },
+  { id: 4, name: 'Mufasa' }
 ]
 
 

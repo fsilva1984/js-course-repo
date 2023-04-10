@@ -1,6 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,200;1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --border: 1px solid #d3d3d3c2;
+  --font-FS: 'Fira Sans', sans-serif;
+  --ligth-color: #c9dde0;
+  --blue-color: #1f9af8;
+  --darknes-color: #2f3337;
+  --dark-color: #17191c;
+  --green-color: #2f6f44;
+  --orange-color: #f48225;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 4px;
+  margin-top: 2px;
+  width: 60vw;
+  background-color: var(--darknes-color);
+}
+
+h1 {
+  font-family: var(--font-FS);
+  font-size: 48px;
+  flex-direction: column;
+  color: var(--ligth-color);
+  margin-top: 10px;
+}
+
+.line-color {
+  height: 3px;
+  width: 40vw;
+  background-color: var(--orange-color);
+  border-radius: 50%;
+}
+
 .container {
-  padding: 12px;
-  margin: 10px;
-  width: 50vw;
-  border: 1px solid rgb(228, 228, 228);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 46vw;
+  background-color: var(--darknes-color);
+  color: var(--ligth-color);
+  margin-bottom: 20px;
+}
+
+
+.form-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 6px;
+  width: 42vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+
+#c-1 {
+  width: 20vw;
+  height: 5vh;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-FS);
+  font-size: medium;
+
+}
+
+#c-2 {
+  width: 20vw;
+  height: 5vh;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-FS);
+  font-size: medium;
+}
+
+#c-3 {
+  width: 20vw;
+  height: 5vh;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-FS);
+  font-size: medium;
+}
+
+#c-4 {
+  width: 20vw;
+  height: 5vh;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-FS);
+  font-size: medium;
+}
+
+#c-5 {
+  width: 20vw;
+  height: 5vh;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-FS);
+  font-size: medium;
+}
+
+#c-6 {
+  width: 10vw;
+  height: 5vh;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-FS);
+  font-size: medium;
+}
+
+.form-child-6 {
+  width: 15vw;
+}
+
+#c-7 {
+  width: 20vw;
+  height: 5vh;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-FS);
+  font-size: medium;
+}
+
+#c-8 {
+  width: 20vw;
+  height: 5vh;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-FS);
+  font-size: medium;
+}
+
+#c-9 {
+  width: 20vw;
+  height: 5vh;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-FS);
+  font-size: medium;
+}
+
+
+#c-10 {
+  width: 5vw;
+  height: 5vh;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: var(--font-FS);
+  font-size: medium;
+  color: var(--ligth-color);
+}
+
+.form-child-10 {
+  width: 15vw;
+}
+
+#bt {
+  cursor: pointer;
+  background-color: var(--blue-color);
+  color: rgb(255, 255, 255);
+  width: 78px;
+  height: 42px;
+  border-radius: 5px;
+  border: none;
+  font-family: var(--font-FS);
+  font-size: medium;
+  transition: all 240ms;
+}
+
+#bt:hover {
+  border: 2px solid var(--blue-color);
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 4px #0091ff6c;
 }
