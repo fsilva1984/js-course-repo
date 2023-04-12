@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CEP Autocomplete</title>
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -12,54 +12,54 @@
 <body>
 
   <div class="main">
-    <h1>Autocomplete Adress</h1>
+    <h1 id="textMain">Autocomplete Adress</h1>
     <div class="line-color"></div>
     <div class="container">
 
       <form class="form-container">
 
         <div class="form-child">
-          <input type="text" id="c-1" class="field" placeholder="Name">
+          <input type="text" id="c-1" class="field" placeholder="Name" required>
         </div>
 
 
         <div class="form-child">
-          <input type="email" id="c-2" class="field" placeholder="Email">
+          <input type="email" id="c-2" class="field" placeholder="Email" required>
         </div>
 
 
         <div class="form-child">
-          <input type="password" id="c-3" class="field" placeholder="Password">
+          <input type="password" id="c-3" class="field" placeholder="Password" required>
         </div>
 
 
         <div class="form-child">
-          <input type="password" id="c-4" class="field" placeholder="Confirm">
+          <input type="password" id="c-4" class="field" placeholder="Confirm" required>
         </div>
 
 
         <div class="form-child">
-          <input type="number" id="c-5" class="field" placeholder="CEP">
+          <input id="c-5" class="field" placeholder="CEP" required>
         </div>
 
 
         <div class="form-child-6">
-          <input type="number" id="c-6" class="field" placeholder="Number">
+          <input type="number" id="c-6" class="field" placeholder="Number" required>
         </div>
 
 
         <div class="form-child">
-          <input type="text" id="c-7" class="field" placeholder="Adress">
+          <input type="text" id="c-7" class="field" placeholder="Adress" required>
         </div>
 
 
         <div class="form-child">
-          <input type="text" id="c-8" class="field" placeholder="City">
+          <input type="text" id="c-8" class="field" placeholder="City" required>
         </div>
 
 
         <div class="form-child-9">
-          <input type="text" id="c-9" class="field" placeholder="State">
+          <select name="" id="c-9"></select>
         </div>
 
 
@@ -82,7 +82,7 @@
 
 
 
-  <script src="./index.js"></script>
+  <script src="./index.js" type="module"></script>
 </body>
 
 </html>

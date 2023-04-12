@@ -57,7 +57,7 @@ const statesBR = [
 
 ]
 
-const uf = [
+const ufBR = [
 
   'AC',
 
@@ -115,31 +115,54 @@ const uf = [
 
 ]
 
-// create elements 'option' with the value of 'unidade federativa'
 
+//create element option and set in select
+function setOptions(el) {
 
-/*
+  let element = "";
+  for (let i = 0; i < statesBR.length; i++) {
 
-
-  const dataPerson = {
-    name: "",
-    email: "",
-    passwd: "",
-    cep: "",
-    number: "",
-    city: "",
-    adress: "",
-    uf: "",
-    reference: "",
-    state: "",
-
+    element += `<option class="opt" value="${ufBR[i]}">${statesBR[i]}</option>\n`
   }
-  
-  let { name, email, passwd, cep, number, city, adress, uf, reference, state } = dataPerson;
 
-*/
+  el.innerHTML = `
+  <option selected>State</option>
+  ${element}`
+}
+
+//setting a value in field UF
+function setUF(x, y) {
+
+  y.addEventListener("click", () => {
+
+    if (y.value !== "State") {
+
+      const result = x.value = y.value
+      console.log(result)
+    }
+  })
+}
+
+//validation field CEP
+function validationCEP(el) {
+
+  const pattern = /^[0-9]{8}$/gm;
+
+  try {
+    if (pattern.test(el.value)) {
+      console.log('CEP OK');
+
+    } else {
+      throw new Error("O CEP precisa ter 8 digitos numericos !")
+    }
+  } catch (err) {
+
+    alert(err.message)
+  }
+
+}
 
 
 
-
+export { setOptions, setUF, validationCEP };
 
