@@ -69,6 +69,13 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
+  color: rgb(238, 28, 28);
+}
+
+* :disabled {
+  background-color: var(--ligth-color);
+  color: var(--darknes-color);
+  opacity: 1;
 }
 
 #c-1 {
@@ -79,7 +86,7 @@ body {
   border-radius: 5px;
   font-family: var(--font-FS);
   font-size: medium;
-
+  background-color: var(--ligth-color);
 }
 
 #c-2 {
@@ -90,6 +97,7 @@ body {
   border-radius: 5px;
   font-family: var(--font-FS);
   font-size: medium;
+  background-color: var(--ligth-color);
 }
 
 #c-3 {
@@ -100,6 +108,7 @@ body {
   border-radius: 5px;
   font-family: var(--font-FS);
   font-size: medium;
+  background-color: var(--ligth-color);
 }
 
 #c-4 {
@@ -110,6 +119,7 @@ body {
   border-radius: 5px;
   font-family: var(--font-FS);
   font-size: medium;
+  background-color: var(--ligth-color);
 }
 
 #c-5 {
@@ -120,6 +130,7 @@ body {
   border-radius: 5px;
   font-family: var(--font-FS);
   font-size: medium;
+  background-color: var(--ligth-color);
 }
 
 #c-6 {
@@ -130,6 +141,7 @@ body {
   border-radius: 5px;
   font-family: var(--font-FS);
   font-size: medium;
+  background-color: var(--ligth-color);
 }
 
 .form-child-6 {
@@ -164,7 +176,9 @@ body {
   border-radius: 5px;
   font-family: var(--font-FS);
   font-size: medium;
+
 }
+
 
 
 #c-10 {
@@ -175,7 +189,7 @@ body {
   border-radius: 5px;
   font-family: var(--font-FS);
   font-size: medium;
-  color: var(--ligth-color);
+  color: #79758a;
 }
 
 .form-child-10 {
@@ -198,7 +212,7 @@ body {
 #bt:hover {
   border: 2px solid var(--blue-color);
   border-radius: 5px;
-  box-shadow: 1px 1px 1px 4px #0091ff6c;
+  box-shadow: 1px 1px 1px 5px #0091ff6c;
 }
 
 /* Mobile */
