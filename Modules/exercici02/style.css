@@ -71,7 +71,6 @@ body {
   padding: 10px;
 }
 
-
 #c-1 {
   width: 20vw;
   height: 5vh;
@@ -157,9 +156,9 @@ body {
   font-size: medium;
 }
 
-#c-9 {
-  width: 284px;
-  height: 42px;
+#region {
+  width: 20vw;
+  height: 5vh;
   padding: 5px;
   border: none;
   border-radius: 5px;
@@ -204,11 +203,12 @@ body {
 
 /* Mobile */
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
 
   body {
     background-color: var(--darknes-color);
   }
+
   .main {
     width: 100%;
   }
@@ -266,9 +266,11 @@ body {
     width: 290px;
   }
 
-  #c-9 {
-    width: 298px;
+
+  #region {
+    width: 290px;
   }
+
 
   #c-10 {
     width: 160px;
@@ -277,25 +279,4 @@ body {
   .form-child-10 {
     width: 210px;
   }
-}
-
-@media (max-width: 800px) {
-
-
-  #textMain {
-    margin-bottom: 3px;
-  }
-
-  .line-color {
-    margin-top: 10px;
-  }
-
-  .container {
-    height: 55vh;
-  }
-
-  .form-container {
-    height: 45vh;
-  }
-
 }

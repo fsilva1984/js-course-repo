@@ -1,160 +1,58 @@
 
-const statesBR = [
+// show data
+function showData(param) {
+  const name = document.querySelector("#c-1")
+  const email = document.querySelector("#c-2")
+  const street = document.querySelector("#c-7")
+  const region = document.querySelector("#region")
+  const city = document.querySelector("8")
+  const state = document.querySelector("#c-10")
 
-  'Acre',
+  street.value = param.logradouro;//rua
+  region.value = param.bairro;// bairro
+  city.value = param.localidade;// cidade
+  state.value = param.uf;// estado
 
-  'Alagoas',
-
-  'Amapá',
-
-  'Amazonas',
-
-  'Bahia',
-
-  'Ceará',
-
-  'Espírito Santo',
-
-  'Goiás',
-
-  'Maranhão',
-
-  'Mato Grosso',
-
-  'Mato Grosso do Sul',
-
-  'Minas Gerais',
-
-  'Pará',
-
-  'Paraíba',
-
-  'Paraná',
-
-  'Pernambuco',
-
-  'Piauí',
-
-  'Rio de Janeiro',
-
-  'Rio Grande do Norte',
-
-  'Rio Grande do Sul',
-
-  'Rondônia',
-
-  'Roraima',
-
-  'Santa Catarina',
-
-  'São Paulo',
-
-  'Sergipe',
-
-  'Tocantins',
-
-  'Distrito Federal',
-
-]
-
-const ufBR = [
-
-  'AC',
-
-  'AL',
-
-  'AP',
-
-  'AM',
-
-  'BA',
-
-  'CE',
-
-  'ES',
-
-  'GO',
-
-  'MA',
-
-  'MT',
-
-  'MS',
-
-  'MG',
-
-  'PA',
-
-  'PB',
-
-  'PR',
-
-  'PE',
-
-  'PI',
-
-  'RJ',
-
-  'RN',
-
-  'RS',
-
-  'RO',
-
-  'RR',
-
-  'SC',
-
-  'SP',
-
-  'SE',
-
-  'TO',
-
-  'DF',
-
-]
-
-
-//create element option and set in select
-function setOptions(el) {
-
-  let element = "";
-  for (let i = 0; i < statesBR.length; i++) {
-
-    element += `<option class="opt" value="${ufBR[i]}">${statesBR[i]}</option>\n`
-  }
-
-  el.innerHTML = `
-  <option selected>State</option>
-  ${element}`
 }
 
-//setting a value in field UF
-function setUF(x, y) {
 
-  y.addEventListener("click", () => {
+// fetching by cep
+async function fetchCep(param) {
 
-    if (y.value !== "State") {
+  const url = `https://viacep.com.br/ws/${param}/json/`
 
-      const result = x.value = y.value
-      console.log(result)
+  const fetching = await fetch(url);
+  const data = await fetching.json()
+
+  try {
+
+    if (!data.erro) {
+      showData(data)
+
+    } else {
+      throw new Error("Cep invalido. !")
     }
-  })
+  } catch (error) {
+    alert(error.message)
+  }
+
+
 }
 
 //validation field CEP
 function validationCEP(el) {
 
-  const pattern = /^[0-9]{8}$/gm;
+  const pattern = /^[0-9]{8}$/;
 
   try {
+
     if (pattern.test(el.value)) {
-      console.log('CEP OK');
+      fetchCep(el.value)
 
     } else {
       throw new Error("O CEP precisa ter 8 digitos numericos !")
     }
+
   } catch (err) {
 
     alert(err.message)
@@ -164,5 +62,5 @@ function validationCEP(el) {
 
 
 
-export { setOptions, setUF, validationCEP };
+export { validationCEP, fetchCep };
 
