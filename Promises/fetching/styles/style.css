@@ -1,0 +1,55 @@
+
+
+
+.container {
+  height: 100vh;
+}
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+
+#form {
+  border: 1px solid rgb(40, 147, 247);
+  border-radius: 5px;
+  width: 65vw;
+  height: 66vh;
+  padding: 12px;
+  height: 80vh;
+}
+
+
+#bt {
+  height: 8vh;
+  width: 20vw;
+}
+
+
+@media screen and (max-width: 500px) {
+  
+  .container {
+    width: auto;
+    height: auto;
+  }
+
+  .main {
+    width: auto;
+    height: auto;
+  }
+  
+
+  #form {
+    height: auto;
+    width: auto;
+  }
+
+  #bt {
+    width: 87vw;
+  }
+
+}
