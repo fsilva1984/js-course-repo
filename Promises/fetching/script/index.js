@@ -27,53 +27,61 @@ const tel = document.querySelector("#inp-4")
 const zip = document.querySelector("#inp-5")
 const num = document.querySelector("#inp-6")
 const ref = document.querySelector("#inp-7")
+const street = document.querySelector("#inp-8")
+const region = document.querySelector("#inp-9")
+const city = document.querySelector("#inp-10")
 
-
-function setAdress(param) {
-  console.log('');
-}
-
-
-function fetching(param) {
-
-
-  const url = `https://viacep.com.br/ws/${param}/json/`
-
-  fetch(url).then(res => {
-    console.log(res.json());
-
-  })
-    .catch(erro => {
-      console.log(erro);
-    })
-
+function dataErro() {
+  alert("Cep invalido")
 }
 
 form.addEventListener("submit", evn => {
   evn.preventDefault()
-  // field is empaty
-  const fieldIsEmpaty = (params) => {
 
-    params.map(el => {
 
-      if (el.value == '') {
-        //el.style.borderColor = 'green'
-        el.style.borderColor = 'red'
 
+  const url = `https://viacep.com.br/ws/${zip.value}/json/`
+
+  fetch(url).then(Response => Response.json())
+    .then(data => {
+
+      if (!data.erro) {
+        setAdress(data)
+      
       } else {
-        return
+
+        dataErro()
       }
 
-      
+      console.log(data.erro);
+
+    }).catch(erro => {
+      throw new Error("Erro, nao foi possivel comunicação com o servidor", erro)
     })
-    fetching(zip.value)
+
+
+
+})
+
+
+function setAdress(_data) {
+
+  const pattern = /^[0-9]{8}$/gm
+
+  if (!pattern.test(zip.value)) {
+    alert("O CEP deve ter 8 digitos Numericos !")
+
+
+
+  } else {
+
+    street.value = _data.logradouro;
+    region.value = _data.bairro;
+    city.value = _data.localidade;
 
   }
 
-
-  fieldIsEmpaty([name, email, passwd, tel, zip, num])
-})
-
+}
 
 
 
