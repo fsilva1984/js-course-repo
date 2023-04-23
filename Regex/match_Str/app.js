@@ -34,23 +34,6 @@ function foundPattern(_arr) {
 foundPattern(arr);
 
 
-log("--------- Use operator logic Or -----------");
-log();
-
-function onePattern(params) {
-  const patterns = /str100|str79 /;
-
-  params.find((item) => {
-
-    if (patterns.test(item)) {
-
-      log(item);
-
-    }
-  });
-}
-
-onePattern(arr);
 
 
 log("----- ignore variations with the flag i ----");
@@ -76,7 +59,7 @@ function twoPatterns(params) {
 twoPatterns(arr);
 
 
-log("-> find more of one pattern with the flag g <-");
+log("-> find more of one match with the flag g <-");
 log();
 
 const str100 = ["str100", "Str100", "str100", "str100", 'Str100'];
@@ -99,5 +82,32 @@ threePatterns(str100)
 
 
 
+log("-----------> Using the flag m <------------");
+
+
+/*
+
+A flag m procura padroes em multiplas linhas
+qunado o padrao e esperado no inicio e fim ou 
+no inicio ou fim da linha com as flags ^ $
+mesmo se ouver uma quebra de linha \n ou \r,
+combinacao perfeita sao as flags mg
+faz a busca multlinnha e global
+
+*/
+
+
+function multLine(text) {
+
+  const pattern = /^Flavio/;
+
+  console.log(pattern.test(text));
+
+}
+
+
+const myText = "Flavio nerugiuerrv \r rgergerg Flavio \n mefmwef Flavio"
+
+multLine(myText)
 
 

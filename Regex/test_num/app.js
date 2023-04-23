@@ -1,7 +1,7 @@
 const log = console.log;
 
 
-log('-----------> pattern simple <--------------');
+log('----------> Testing pattern simple <-------');
 
 const pattern = /123/;
 
