@@ -32,14 +32,13 @@ body {
 
 .result {
   overflow: hidden;
-  height: 80px;
-  transition: max-height 450ms;
+  height: 0px;
+  transition: height 450ms;
   pointer-events: none;
-  background-color: #393f44;
 }
 
 .show {
- height: 0px;
+  height: 80px;
 }
 
 .btn {
