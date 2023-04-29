@@ -8,18 +8,15 @@ const fade = document.querySelector("#fade")
 
 
 const toggleModal = () => {
-  [modal, fade].map(el => el.classList.remove('hide'))
 
+  [modal, fade].map(el => el.classList.add("hide"))
 }
 
 btClose.addEventListener("click", toggleModal)
 
 
 function pressButton() {
-  //return [modal, fade].map(el => el.classList.add('hide'))
-
-  modal.classList.add("hide")
-  fade.classList.add("hide")
+  [modal, fade].map(el => el.classList.remove('hide'))
   console.log('fn pressButton Ok!');
 }
 
