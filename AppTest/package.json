@@ -1,0 +1,12 @@
+{
+  "name": "apptest",
+  "version": "1.0.0",
+  "description": "calculator imc",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fsilva1984",
+  "license": "ISC"
+}
