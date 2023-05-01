@@ -7,64 +7,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tabela imc</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./css/imc.css">
+
+  <link rel="stylesheet" href="./css/modal.css">
+
 
 </head>
 
 <body>
 
 
-  <div class="container col-md-10">
-    <h1 class="txtMain col-md-6 p-3 m-2">Calculadora IMC</h1>
+  <div class="container">
 
-    <div class="main col-md-10 mb-3">
 
-      <div class="text col-md-10 p-3">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim recusandae facilis, culpa ratione asperiores
-          eaque provident, officiis cum, aperiam similique ex iste natus animi voluptate delectus ab error laudantium.
-          Perspiciatis.</p>
+
+
+    <div class="main-modal">
+      <div class="container-modal">
+
+        <div id="fade" class="hide"></div>
+
+        <div class="modal hide">
+          <div class="modal-header">
+            <h2 class="modal-titlle">
+              <span>Indice de Massa Corporal</span>
+            </h2>
+          </div>
+          <hr>
+          <br>
+
+          <div class="modal-body">
+            <p id="p-modal">
+              Você deve preencher os campos
+              devidamente e Reenvie.
+            </p>
+            <br>
+          </div>
+          <br>
+          <hr>
+          <div class="modal-footer">
+            <button class="bt-close-modal">
+              <p>Close</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <h1 class="txtMain">Calculadora IMC</h1>
+
+    <div class="main">
+
+      <div class="text">
+        <figure>
+
+          <p>De acordo com a OMS a obesidade é determinada pelo Índice de Massa Corporal (IMC) que é calculado
+            dividindo-se o peso (em kg) pelo quadrado
+            da altura (em metros). O resultado revela se o peso está dentro da faixa ideal, abaixo ou acima do
+            desejado.</p>
+          <figcaption>
+            <cite>
+              <a href="https://bvsms.saude.gov.br/bvs/dicas/215_obesidade.html" target="_blank" rel="noopener noreferrer">fonte: saude.gov.br</a>
+            </cite>
+          </figcaption>
+
+        </figure>
       </div>
 
-      <div class="app col-md-4">
+      <div class="app">
 
-        <div class="peso p-1 m-3">
-          <label for="c-1" class="col-5">Peso</label>
-          <input type="number" id="c-1" name="pes" value="">
+        <div class="peso">
+          <label for="c-1">Peso</label>
+          <input type="number" id="c-1" name="pes" value="" placeholder="Ex. 83">
         </div>
 
-        <div class="altura  p-1 m-3">
-          <label for="c-2" class="col-5">Altura</label>
-          <input type="number" id="c-2" name="alt" value="">
+        <div class="altura">
+          <label for="c-2">Altura</label>
+          <input type="number" id="c-2" name="alt" value="" placeholder="Ex. 1.75">
         </div>
 
-        <div class="result text-center p-2 m-2 bg-dark  img-fluid img-thumbnail" hidden>
-          <h5 class="info">
-            <span class="textInfo text-light">...</span>
-          </h5>
-        </div>
-
-        <button class="btn btn-primary mb-2" type="button">Calcular</button>
+        <button class="btn" type="button">Calcular</button>
       </div>
 
-
-      <img-fluid class="tab col-md-5">
-        <img src="./img/imc.png" class="img-fluid img-thumbnail" alt="Supera-Farma-Tabela-IMC-Classificacao">
-        </section>
+      <figure class="conteiner-img">
+        <img src="./img/imc.png" class="img-fluid" alt="Supera-Farma-Tabela-IMC-Classificacao">
+      </figure>
 
     </div>
   </div>
 
 
+  <script defer src="./script/index.js" type="module"></script>
 
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-
-
-  <script defer src="./script/index.js"></script>
+  <script defer src="./script/modal.js" type="module"></script>
 </body>
 
 </html>
