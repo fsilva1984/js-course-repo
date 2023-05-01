@@ -17,7 +17,6 @@ btClose.addEventListener("click", toggleModal)
 
 function pressButton() {
   [modal, fade].map(el => el.classList.remove('hide'))
-  console.log('fn pressButton Ok!');
 }
 
 export { pressButton };

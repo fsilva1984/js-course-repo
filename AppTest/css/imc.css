@@ -99,11 +99,11 @@ input {
 
 @media (max-width: 500px) {
   .container {
-    width: 100vw;
+    width: 100%;
   }
 
   .main {
-    width: 100vw;
+    width: 100%;
   }
 
   .app {
@@ -122,11 +122,11 @@ input {
   }
 
   .conteiner-img {
-    width: 95vw;
+    width: 88vw;
   }
 
   .img-fluid {
-    width: 94vw;
+    width: 85vw;
   }
 
 }
