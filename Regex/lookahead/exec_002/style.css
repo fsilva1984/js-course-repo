@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;1,600&display=swap');
+
+:root {
+  --c-text: rgb(68, 165, 255);
+  --p-default: 5px;
+  --m-default: 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  margin-top: 15px;
+  border: 1px solid #777777ad;
+  width: 40vw;
+  height: 85vh;
+  border-radius: 0.5rem
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border: 1px solid #777777ad;
+  width: 39vw;
+  height: 83vh;
+  border-radius: 0.5rem;
+}
+
+
+#text-area {
+  border-radius: 0.5rem;
+  box-shadow: 3px 1px 3px 2px #1c1e1f6c;
+}
+
+#search {
+  text-align: center;
+  width: 20vw;
+  height: 5vh;
+  margin: var(--m-default);
+  font-size: 1.25rem;
+  border-radius: 1rem;
+}
+
+#hours {
+  text-align: center;
+  width: 20vw;
+  height: 5vh;
+  margin: var(--m-default);
+  font-size: 1.25rem;
+  border-radius: 1rem;
+  border: 1px solid #777777ad;
+  color: var(--c-text);
+}
+
+.findPattern {
+  color: red;
+}
