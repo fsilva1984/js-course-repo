@@ -10,7 +10,7 @@ function filteredArray(arr, elem) {
   }
 
 
-  return endArr;
+  console.log(endArr);
 }
 
 filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 26)
