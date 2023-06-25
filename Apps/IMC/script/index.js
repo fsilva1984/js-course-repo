@@ -20,6 +20,17 @@ const resp = [
 
 
 
+
+/*
+ - Upgrade funcao que calcule o menor peso possivel
+ e o maior peso possivel para informar a media de
+ peso ideal ao usuario
+
+ - Colocar um ponto automaticamente apos o primeiro digito
+ retirando a obrigacao do usuario de digitar o ponto
+*/
+
+
 function calc() {
   const result = peso.value / (altura.value ** 2);
   const any1 = peso.value
@@ -32,7 +43,7 @@ function calc() {
       p.textContent = `${resp[0]} seu imc: ${result.toFixed(1)}`;
 
     } else if (result > 18 && result < 18.4) {
-      p.textContent = `{resp[1]} seu imc: ${result.toFixed(1)}`;
+      p.textContent = `${resp[1]} seu imc: ${result.toFixed(1)}`;
 
     } else if (result > 18.5 && result < 24.9) {
       p.textContent = `${resp[2]} seu imc: ${result.toFixed(1)}`;
@@ -46,7 +57,9 @@ function calc() {
     } else if (result > 35 && result < 40) {
       p.textContent = `${resp[5]} seu imc: ${result.toFixed(1)}`;
 
-    } else { p.textContent = `${resp[6]} seu imc: ${result.toFixed(1)}` }
+    } else if (result > 40 && result < 55) {
+      p.textContent = `${resp[6]} seu imc: ${result.toFixed(1)}`
+    }
     
     
   }
