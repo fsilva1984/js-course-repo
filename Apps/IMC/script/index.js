@@ -22,14 +22,29 @@ const resp = [
 
 
 /*
- - Upgrade funcao que calcule o menor peso possivel
+ - UPGRADE 
+ - funcao que calcule o menor peso possivel
  e o maior peso possivel para informar a media de
  peso ideal ao usuario
 
+    **feito**
  - Colocar um ponto automaticamente apos o primeiro digito
  retirando a obrigacao do usuario de digitar o ponto
 */
 
+function punctuation() {
+  const regex = new RegExp(/(\d{1})(\d{2})/);
+  const rg = /^\d\.\d{2}/;
+  const pattern = altura.value;
+
+  if (rg.test(pattern)) {
+    console.log("Ok");
+  } else if(pattern.length == 3){
+    altura.value = pattern.replace(regex, "$1.$2");
+  };
+};
+
+altura.addEventListener("keyup", punctuation);
 
 function calc() {
   const result = peso.value / (altura.value ** 2);
@@ -60,16 +75,17 @@ function calc() {
     } else if (result > 40 && result < 55) {
       p.textContent = `${resp[6]} seu imc: ${result.toFixed(1)}`
     }
-    
-    
+
+
   }
 }
 
 
 btn.addEventListener("click", () => {
-
-  pressButton()
-  calc()
+  setTimeout(() => {
+    pressButton()
+    calc()
+  }, 500)
 
 })
 
