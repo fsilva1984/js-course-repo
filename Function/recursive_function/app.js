@@ -20,7 +20,6 @@ console.log("------------------------------------------");
 
 
 function mult(arr, n) {
-  let num = 0
   let product = 1
   if (n <= 0) {
     /* se o parametro "n" e menor ou igual a 0 
