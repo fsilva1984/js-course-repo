@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(221, 221, 221);
+}
+
+.container {
+  width: 70vw;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60vw;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+}
+
+#box-container {
+  width: 40vw;
+}
+
+#t-container {
+  width: 50vw;
+}
+
+td,
+th {
+  padding: .7em;
+  margin: 0;
+  text-align: center;
+}
+
+
+@media(max-width: 800px) {
+
+  .container {
+    width: 100%;
+  }
+
+  #t-container {
+    width: 90vw;
+  }
+
+  #main {
+    width: 80vw;
+  }
+
+  #box-container{
+    width: 70vw;
+  }
+
+}

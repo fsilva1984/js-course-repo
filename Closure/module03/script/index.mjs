@@ -4,6 +4,5 @@
 
 import {  fnModule } from "./app.mjs";
 
-
-fnModule;
+fnModule(tbody);
 
