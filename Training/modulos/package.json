@@ -1,0 +1,12 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "description": "calculator",
+  "main": "export_module.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fsilva",
+  "license": "ISC"
+}
