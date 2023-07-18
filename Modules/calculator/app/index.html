@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calculator</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script type="module" src="../app.mjs" defer></script>
+</head>
+
+<body>
+  <!--Container Pai-->
+  <div class="container">
+
+    <!--Corpo da Calculadora-->
+    <div id="body-calc">
+
+      <!--Display-->
+      <div class="row g-2">
+
+        <div class="col-md">
+          <input id="disp" value="" autofocus>
+        </div>
+
+      </div>
+
+
+
+      <!--Todos os botões-->
+      <div id="container-btn">
+        <table id="tb" class="table">
+
+          <tbody>
+            <tr>
+              <th scope="col">
+                <button id="sum" class="btn btn-outline-primary">+</button>
+              </th>
+
+              <th scope="col">
+                <button id="sub" class="btn btn-outline-primary">-</button>
+              </th>
+
+              <th scope="col">
+                <button id="div" class="btn btn-outline-primary">/</button>
+              </th>
+
+              <th scope="col">
+                <button id="mult" class="btn btn-outline-primary">*</button>
+              </th>
+
+              <th scope="col">
+                <button id="rootSQ" class="btn btn-outline-primary">√</button>
+              </th>
+
+              <th scope="col">
+                <button id="percent" class="btn btn-outline-primary">%</button>
+              </th>
+            </tr>
+
+
+            <tr>
+              <th scope="col">
+                <button id="one" class="btn btn-outline-primary">1</button>
+              </th>
+
+              <th scope="col">
+                <button id="two" class="btn btn-outline-primary">2</button>
+              </th>
+
+              <th scope="col">
+                <button id="three" class="btn btn-outline-primary">3</button>
+              </th>
+
+              <th scope="col">
+                <button id="four" class="btn btn-outline-primary">4</button>
+              </th>
+
+              <th scope="col">
+                <button id="five" class="btn btn-outline-primary">5</button>
+              </th>
+
+              <th scope="col">
+                <button id="six" class="btn btn-outline-primary">6</button>
+              </th>
+            </tr>
+
+
+
+            <tr>
+              <th scope="col">
+                <button id="seven" class="btn btn-outline-primary">7</button>
+              </th>
+
+              <th scope="col">
+                <button id="eight" class="btn btn-outline-primary">8</button>
+              </th>
+
+              <th scope="col">
+                <button id="nine" class="btn btn-outline-primary">9</button>
+              </th>
+
+              <th scope="col">
+                <button id="zero" class="btn btn-outline-primary">0</button>
+              </th>
+
+              <th scope="col">
+                <button id="point" class="btn btn-outline-primary">.</button>
+              </th>
+
+
+              <th scope="col">
+                <button id="equal" class="btn btn-primary">=</button>
+              </th>
+            </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+</body>
+
+</html>
