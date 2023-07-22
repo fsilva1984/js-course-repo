@@ -1,10 +1,9 @@
 
 
-
+// Calcula a ariz quadrada de um numero
 const rootSQ = (function () {
-  let result = 0;
   return function (x) {
-    return result = x ** 0.5;
+    return x ** 0.5;
   };
 })();
 
