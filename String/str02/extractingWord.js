@@ -1,7 +1,7 @@
 const str = 'Extraindo string dentro de textos em javascript'
 
 
-function extractingWord(string, target) {
+function extractingWord(string) {
 
   const pattern = new RegExp(/\S\w*$/, 'gim');
 
@@ -11,4 +11,4 @@ function extractingWord(string, target) {
 
 }
 
-extractingWord(str, 'javascript')
+console.log(extractingWord('javascript'))

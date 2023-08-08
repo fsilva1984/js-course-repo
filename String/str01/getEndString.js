@@ -1,14 +1,15 @@
 
-
-//pegar o final da string
-//similar ao method endsWith()
-
+/*
+  Utilizando o slice pegaremos a quantidade final
+  de caracteres passados para a funcao e 
+  retornamos um valor booleano
+*/
 
 const text = "Testando minhas abilidades em javascript";
 
-
 function myTarget(str, n) {
-  const num = n.length;// comprimento de 'n'
+  /* pegaremos o comprimento de 'n' e passaremos para o slice */
+  const num = n.length;
 
   //extraindo os ultimos caracteres da string
   const result = str.slice(str.length - num);
@@ -20,13 +21,10 @@ function myTarget(str, n) {
   return false;
 }
 
-console.log(myTarget('Booleans', 'ns'))
+console.log(myTarget(text, 'javascript'))
 
 function confirmEnding(str, target) {
-  // "Never give up and God will find you."
-  // __Fsilva
-
-
+  
   let re = new RegExp(target + "$", "i");
 
   return re.test(str);
