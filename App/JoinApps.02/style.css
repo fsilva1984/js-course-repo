@@ -1,0 +1,59 @@
+
+
+
+main {
+  display: flex;
+  justify-content: center;
+  
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  width: 70%;
+  height: 70vh;
+  border: 1px solid orange;
+}
+form {
+  width: 70%;
+}
+.box-bt {
+  height: 50px;
+ 
+}
+.bt {
+  height: 50px;
+}
+
+
+
+
+#erroSenha{
+  display: none;
+  border: 1px solid #dc3545;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: 800ms;
+}
+#erroSenha p {
+  padding: 5px;
+  color: #dc3545;
+  font-weight: 300;
+}
+
+
+#erroConfirm {
+  display: none;
+  border: 1px solid #dc3545;
+  border-radius: 5px;
+  margin: 5px;
+  transition: 800ms;
+}
+
+#erroConfirm p {
+  padding: 5px;
+  color: #dc3545;
+  font-weight: 300;
+}
