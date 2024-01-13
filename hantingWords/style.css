@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;1,300;1,600&display=swap');
+
+body {
+  background-color: #34383a;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  background-color: #989999;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  border: 1px solid rgb(140, 141, 141);
+  border-radius: 6px;
+  margin-bottom: 78%;
+}
+
+
+input {
+  font-size: 1.25rem;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 5px;
+  margin: 0;
+  border: 0;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  color: aliceblue;
+  cursor: pointer;
+  width: 50px;
+  background-color: rgb(43, 124, 230);
+}
+
+button:hover {
+  background-color: rgb(60, 138, 240);
+}
+
+
+footer {
+  text-align: center;
+  color: rgb(230, 143, 92);
+  background-color: #181a1b;
+  height: 25px;
+}
+
+
+@media(max-width: 400px) {
+  main {
+
+    margin-top: 5px;
+  }
+  .container {
+    margin-top: 35px;
+  }
+  h1 {
+    margin: 0;
+  }
+  form {
+    height: 40px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 100%;
+  }
+  #browser{
+    width: 80%;
+    margin-left: 4px;
+  }
+  #btn {
+      width: 65px;
+  }
+}
