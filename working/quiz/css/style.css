@@ -1,0 +1,41 @@
+
+
+
+main {
+  background-color: rgb(45, 48, 51);
+}
+
+.header {
+  background-color: rgb(48, 138, 240);
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: aliceblue;
+}
+
+
+.resp {
+  text-align: center;
+}
+.score {
+  color: aliceblue;
+}
+
+.form {
+ 
+  background-color: rgb(45, 48, 51);
+}
+
+.footer {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+.bx {
+  margin-left: 20px;
+}
+
+input {
+  cursor: pointer;
+}
