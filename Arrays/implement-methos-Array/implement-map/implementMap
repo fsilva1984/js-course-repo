@@ -1,0 +1,18 @@
+
+
+const numbers = [23, 72, 45, 89, 93];
+
+Array.prototype.myMap = function (callback) {
+
+  const resultArray = [];
+
+  for (let i = 0; i < this.length; i++) {
+    resultArray.push(callback(this[i], i, this))
+  }
+
+  return resultArray;
+
+};
+
+
+console.log(numbers.myMap(function (item) { return item}));

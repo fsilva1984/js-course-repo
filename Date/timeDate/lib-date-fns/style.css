@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 22px;
+}
+
+
+[data-color="fullcolor"] {
+    width: 80px;
+    height: 25px;
+
+    border: 1px solid white;
+}
+
+
+
+.geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+
+[data-boxdate="date"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*border: 1px solid white;*/
+    margin-top: 20px;
+}
+
+[data-year="year"] {
+    border: 1px solid red;
+
+}
+
+[data-month="month"] {
+    border: 1px solid blue;
+
+}
+
+[data-weekday="weekday"] {
+    border: 1px solid yellow;
+}
+
+[data-monthday="monthday"] {
+    border: 1px solid green;
+
+}
