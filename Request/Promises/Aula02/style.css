@@ -1,0 +1,19 @@
+body {
+    background: #1a1c1d;
+    color: aliceblue;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.boxSuccess {
+    min-height: 60px;
+    border: 1px solid green;
+}
+
+.boxFailure {
+    min-height: 60px;
+    border: 1px solid red;
+}
