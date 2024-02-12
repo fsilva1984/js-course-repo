@@ -1,0 +1,78 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+input {
+    width: 300px;
+    padding: 3px;
+    border: none;
+    outline: none;
+    margin-left: 15%;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    text-align: center;
+    background-color: rgb(212, 212, 212);
+}
+
+button {
+    width: 60px;
+    padding: 6px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 3px;
+    color: aliceblue;
+    background-color: rgb(34, 103, 231);
+}
+
+button:hover {
+    transition: 300ms;
+    background-color: rgb(69, 134, 255);
+}
+
+h2 {
+    width: 100%;
+    margin-left: 4%;
+}
+
+.postalBox {
+    margin-top: 15px;
+}
+
+
+ul {
+    width: 95vw;
+}
+
+.item {
+    width: 30%;
+    padding: 8px;
+    list-style: none;
+    border-radius: 3px;
+    min-height: 20px;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+#uf {
+    width: 35px;
+}
+
+#numero {
+    width: 70px;
+}
+
+.boxErro {
+    color: red;
+    width: 93%;
+}

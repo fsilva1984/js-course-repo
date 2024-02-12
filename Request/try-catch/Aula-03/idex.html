@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch ViaCep</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main>
+        <h2>Buscar endereço</h2>
+
+        <div class="boxErro"></div>
+
+        <form method="get">
+            <div class="inputUser">
+                <input type="number" value="" placeholder="00000-000">
+            </div>
+            <button type="submit">Submit</button>
+        </form><!--action=""-->
+
+
+
+        <div class="boxAdrress">
+            <ul class="autofill">
+                <div class="postalBox">
+                    <label for="logradouro">Logradouro</label>
+                    <li class="item" id="logradouro"></li>
+                </div>
+
+                <div class="postalBox">
+                    <label for="numero">Numero</label>
+                    <li class="item" id="numero"></li>
+                </div>
+
+                <div class="postalBox">
+                    <label for="bairro">Bairro</label>
+                    <li class="item" id="bairro"></li>
+                </div>
+
+                <div class="postalBox">
+                    <label for="localidade">Localidade</label>
+                    <li class="item" id="localidade"></li>
+                </div>
+
+                <div class="postalBox">
+                    <label for="uf">UF</label>
+                    <li class="item" id="uf"></li>
+                </div>
+
+
+            </ul>
+        </div>
+    </main>
+
+    <script src="./app.js" type="text/javascript"></script>
+</body>
+
+</html>
