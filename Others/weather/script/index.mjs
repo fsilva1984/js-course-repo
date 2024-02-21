@@ -1,0 +1,89 @@
+import getDate from "./time.mjs";
+import getWeather from "./weather.mjs"
+
+
+// Date and Hours
+const date = document.querySelector('.date');
+const hour = document.querySelector('.hour');
+const {
+    hours,
+    minutes,
+    seconds,
+    year,
+    dayMonth,
+    month
+} = getDate();
+
+date.textContent = `${dayMonth} ${month()} ${year}`
+setInterval(() => {
+    hour.textContent = `${hours}:${minutes}:${seconds()}`
+}, 1000)
+
+
+//Element recive response of Promise
+const el_lat = document.querySelector('.lat');
+const el_lon = document.querySelector('.lon');
+const el_temp = document.querySelector('.temp');
+const el_info = document.querySelector('.info');
+const el_tempMin = document.querySelector('.temp-min');
+const el_tempMax = document.querySelector('.temp-max');
+const el_humidity = document.querySelector('.humidity');
+const el_iconInfo = document.querySelector('.icon-info');
+
+// convert kelvin to celsius
+const kelvinToCelsius = (param) => {
+    return Math.round(param - 273.15)
+}
+document.querySelector('button')
+    .addEventListener('click', e => {
+        e.preventDefault();
+        const input = document.querySelector('input')
+
+        if (input.value === '') {
+            return
+        } else {
+
+            getWeather(input.value)
+                .then(response => {
+                    const {
+                        cod,
+                        coord,
+                        main,
+                        weather,
+                    } = response;
+
+
+                    el_lat.textContent = `Latitude ${coord.lat}`
+                    el_lon.textContent = `Longitude ${coord.lon}`
+                    el_temp.textContent = `C° ${kelvinToCelsius(main.temp)}`
+                    el_tempMin.textContent = `Min C° ${kelvinToCelsius(main.temp_min)}`
+                    el_tempMax.textContent = `Max C° ${kelvinToCelsius(main.temp_max)}`
+                    el_humidity.textContent = `~ ${main.humidity}%`
+
+
+                    switch (weather[0].description) {
+                        case 'broken clouds':
+                            el_info.textContent = 'Parcialmente nublado'
+                            el_iconInfo.innerHTML = `<i class="fa-solid fa-cloud"></i>`
+                            break;
+                        case 'overcast clouds':
+                            el_info.textContent = 'Nublado'
+                            el_iconInfo.innerHTML = `<i class="fa-solid fa-cloud"></i>`
+                            break;
+                        case 'few clouds':
+                            el_info.textContent = 'Ceu limpo'
+                            el_iconInfo.innerHTML = `<i class="fa-solid fa-cloud-sun"></i>`
+                            break;
+                        case 'light rain':
+                            el_info.textContent = 'Chuva leve'
+                            el_iconInfo.innerHTML = `<i class="fa-solid fa-cloud-sun-rain"></i>`
+                            break;
+                        case 'scattered clouds':
+                            el_info.textContent = 'Nuveis dispersas'
+                            break;
+                    }
+
+                })
+                .catch(erro => erro);
+        }
+    })

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@87.5,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 87.5;
+}
+
+.grid-header {
+    width: 100%;
+    display: grid;
+    font-size: 1.5rem;
+    text-align: center;
+    grid-template-columns: 1fr;
+    background: linear-gradient(purple, red);
+
+}
+
+.box-btn {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto;
+}
+
+ul {
+    display: grid;
+    padding: 8px;
+    column-gap: 30px;
+    grid-template-columns: repeat(5, 55px);
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    width: 85px;
+    padding: 5px;
+    border: none;
+    font-size: 1.4rem;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.grid-container {
+    display: grid;
+    padding: 4px;
+    justify-self: center;
+    width: 1100px;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 50% 50%; */
+}
+
+
+.sub-container {
+    display: grid;
+    padding: 3px;
+    width: 350px;
+    grid-template-columns: 1fr;
+}
+
+.sub-01 {
+    background-color: rgb(58, 155, 58);
+}
+
+.sub-02 {
+    background-color: rgb(255, 0, 0);
+}
+
+.sub-03 {
+    background-color: rgb(165, 127, 255);
+}
+
+.sub-04 {
+    width: 90%;
+    display: none;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justify-content: space-between;
+    background-color: rgb(165, 127, 255);
+}
+
+.item-sub4 {
+    padding: 5px;
+    width: 150px;
+}
+
+.grid-footer {
+    height: 70px;
+    display: grid;
+    margin-top: 20px;
+    background-color: #111114;
+
+}
+
+
+
+@media(max-width: 900px) {
+    .grid-container {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sub-container {
+        width: 100%;
+    }
+
+    .sub-03 {
+        display: none;
+    }
+
+    .sub-04 {
+        display: flex;
+    }
+}
+
+@media(max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sub-container {
+        width: 100%;
+    }
+
+    .sub-03 {
+        display: grid;
+    }
+
+    .sub-04 {
+        display: none;
+    }
+}

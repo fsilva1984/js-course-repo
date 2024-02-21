@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    color: aliceblue;
+    background-color: #202020;
+}
+
+.grid-header {
+    display: grid;
+    padding: 16px;
+    color: aliceblue;
+    justify-items: center;
+    grid-template-rows: auto;
+    background-color: #161718;
+}
+
+.box-btn {
+    display: grid;
+    margin-top: 5px;
+    justify-items: center;
+    grid-template-columns: repeat(4, 68px);
+}
+
+.box-btn li {
+    list-style: none;
+}
+
+.key-value {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    margin: 3px;
+    padding: 2px;
+    width: 100px;
+    font-size: 1.25rem;
+}
+
+.ponts {
+    font-size: xx-large;
+}
+
+
+.grid-container {
+    display: grid;
+    margin-top: 13px;
+    justify-items: center;
+    grid-template-columns: 1fr;
+}
+
+.box-arg {
+    margin-top: 13px;
+    margin-left: 25px;
+}
+
+button {
+    width: 70px;
+    height: 30px;
+    padding: 2px;
+    border: none;
+    font-size: 1rem;
+    transition: 200ms;
+}
+
+#add:hover {
+
+    background-color: #4079f3;
+}
+
+
+#getData:hover {
+
+    background-color: rgb(159, 74, 238);
+}
+
+#del:hover {
+
+    background-color: rgb(250, 162, 0);
+}
+
+#clen {
+    border-right: none;
+}
+
+#clen:hover {
+
+    background-color: rgb(209, 27, 27);
+}
+
+._ {
+    padding: 5px;
+    margin-top: 50px;
+    border: 1px solid #8e9194;
+}
+
+td {
+    width: 100px;
+}
