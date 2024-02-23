@@ -1,17 +1,18 @@
 
 const input = document.querySelector('#input-add');
 const ul = document.querySelector('#ul');
-
+let template = '';
 // Add a template with new tasks 
 const addItem = () => {
-  ul.innerHTML += `
+  template = `
     <div class="box" data-box="list">
     <li class="li" data-li="list">${input.value.trim()}</li>
     <div class="del" data-trash="list">
       X
     </div>
     </div>
-    `
+  `
+  ul.insertAdjacentHTML('afterbegin', template);
   input.value = '';
 }
 input.addEventListener('keyup', e => {

@@ -9,8 +9,7 @@ const container = document.querySelector('.container');
 const box = document.querySelector('.body-main');
 
 function addTask() {
-  container.innerHTML += `
-
+  let templates = `
    <div class="box-task">
      <p class="task">${addtask.value}</p>
    </div>
@@ -18,19 +17,26 @@ function addTask() {
       <i class="del fa-solid fa-trash"></i>
    </div>
   `;
+  // adiciona novas tarefas sempre ao topo
+  container.insertAdjacentHTML('afterbegin', templates);
+}
+
+// set key in localStorage
+let n = 0;
+function count() {
+  return n ++;
 }
 
 addtask.addEventListener('keypress', e => {
+  
 
   if (e.key === 'Enter' && !addtask.value == '') {
 
     box.style.display = 'flex';
-
     addTask();
-
+    localStorage.setItem(count(), addtask.value);
     addtask.value = '';
   }
-
 });
 
 
@@ -46,7 +52,7 @@ document.addEventListener('click', e => {
 
 
     e.target.addEventListener('dblclick', e => {
-
+      console.log(parentElementClicked.firstChild.innerText);
       elementTaskBox.remove();
       parentElementClicked.remove();
 

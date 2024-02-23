@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-family: "Signika Negative", sans-serif;
+}
+
+#header {
+    top: 0;
+    display: grid;
+    padding: 10px;
+    position: sticky;
+    justify-items: center;
+    grid-template-rows: auto;
+    background-color: #161616;
+    box-shadow: 1px 1px 1px 1px #000000;
+}
+
+#title {
+    font-weight: 900;
+    color: aliceblue;
+}
+
+#input {
+    margin: 5px;
+    padding: 3px;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-align: center;
+    background-color: #4d4c4c;
+}
+
+#main {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+}
+
+#ul {
+    display: grid;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    justify-items: center;
+    grid-template-columns: 1fr;
+}
+
+.box {
+    width: 500px;
+    display: grid;
+    margin-top: 3px;
+    background-color: #181818;
+    grid-template-columns: 1fr 30px;
+    box-shadow: 1px 1px 1px 0px #000000;
+}
+
+li {
+    padding: 8px;
+    overflow-x: auto;
+    color: aliceblue;
+    font-size: 1.25rem;
+}
+
+li:hover {
+    background-color: #202020;
+}
+
+.trash {
+    align-self: center;
+    justify-self: center;
+}
+
+.trash:hover {
+    color: #e21d1d;
+    cursor: pointer;
+}
+
+
+body {
+    background-color: #282828;
+}
+
+.borderRed {
+    border: 1px solid red;
+}
+
+
+.trash {
+    padding: 10px;
+}
+
+@media (min-width: 1200px) {
+    .box {
+        width: 600px;
+    }
+}
+
+@media (max-width: 500px) {
+    #ul {
+        width: 95%;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
