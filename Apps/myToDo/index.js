@@ -1,5 +1,3 @@
-
-
 const input = document.querySelector('#input');
 
 // tras de volta todo que esta na LocalStorage

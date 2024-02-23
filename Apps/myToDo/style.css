@@ -100,11 +100,23 @@ body {
 }
 
 @media (max-width: 500px) {
+    #header {
+        width: auto;
+    }
+
+    #input {
+        font-size: 2rem;
+        width: 90%;
+    }
+
     #ul {
         width: 95%;
     }
 
     .box {
         width: 100%;
+    }
+    li {
+        font-size: 2rem;
     }
 }
