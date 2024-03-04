@@ -1,3 +1,6 @@
+const dateElenent = document.querySelector('.date');
+const hourElement = document.querySelector('.hour');
+
 const monthName = [
   'Janeiro',
   'Fevereiro',
@@ -18,7 +21,6 @@ const zero = (n) => (n < 10) ? '0' + n : n;
 const date = new Date();
 
 //date
-const dayWeek = date.getDay();
 const dayMonth = date.getDate();
 const month = date.getMonth();
 const year = date.getFullYear();
@@ -32,13 +34,11 @@ function callSeconds() {
   return zero(seconds);
 };
 
-export default function getDate() {
-  return {
-    hours: zero(hours),
-    minutes: zero(minutes),
-    seconds: callSeconds,
-    year: year,
-    dayMonth: zero(dayMonth),
-    month: () => monthName[month]
-  }
-}
+const setMonth = () => monthName[month];
+
+
+dateElenent.textContent = `${zero(dayMonth)} ${setMonth()} ${year}`
+setInterval(() => {
+  hourElement.textContent = `${zero(hours)}:${zero(minutes)}:${callSeconds()}`
+}, 1000)
+

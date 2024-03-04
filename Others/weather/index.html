@@ -18,7 +18,7 @@
 
     <main class="grid-container">
 
-        <form action="">
+        <form action="#">
             <input type="text" value="" placeholder="Name City">
             <button type="submit">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -31,9 +31,9 @@
                 <h3 class="hour">00:00:00</h3>
             </div>
             <div class="description">
-                <p class="info">Chuvas</p>
+                <p class="info">Cloud</p>
                 <h2 class="icon-info">
-                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    <i class="fa-solid fa-cloud"></i>
                 </h2>
             </div>
             <div class="lat-lon">
@@ -49,10 +49,23 @@
                 <h2 class="humidity">~ 00%</h2>
                 <p>Umidade relativa do Ar</p>
             </div>
+
+            <div class="wind">
+
+                <div class="tooltip">
+                    <span class="tooltiptext">Velocidade do vento</span>
+                    <h2 class="speed"><i class="fa-brands fa-cloudscale"></i></h2>
+                    <p><span class="speed-wind">0.0</span>Km/h</p>
+                </div>
+
+            </div>
+
         </div>
+
 
     </main>
     <script type="module" src="./script/index.mjs"></script>
+    <script type="module" src="./script/time.mjs"></script>
 </body>
 
 </html>
