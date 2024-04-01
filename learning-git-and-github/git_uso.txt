@@ -1,0 +1,73 @@
+
+# git config user.name
+
+	<usuario>
+ 
+# git config user.email
+
+	<email_@usuario.com>
+
+
+
+Criar mensagens claras e objetivas no versionamento de código é essencial para o bom andamento
+do projeto, uma vez que, à medida que o trabalho avança, mais features são adicionadas e com isso
+novos branches e códigos são inseridos, ajustes são realizados e testes são implementados. Na hora
+de escrever sua mensagem, pode ser que a categorização ajude. Alguns exemplos de categoria são:
+
+# Feature: quando uma nova funcionalidade é desenvolvida;
+
+# Fix: quando se trata de uma correção de bug;
+
+# Docs: quando se trata somente de uma alteração na documentação, como a atualização
+do README, por exemplo;
+
+# Style: quando alteramos uma folha de estilo de um arquivo CSS;
+
+# Refactor: quando refatoramos completamente um trecho de código
+
+# Test: quando os códigos de teste forem escritos ou corrigidos
+
+#### Enviando o Commit Para o Repositório Remoto ####
+
+# git remote add origin <url> 
+
+# git push --set-upstream origin master
+
+
+
+
+############  Revertendo um Commit ##########
+
+A vantagem de se utilizar um sistema de versionamento é a possibilidade de reverter os códigos
+enviados. Isso se faz necessário porque o tempo necessário para corrigir os problemas em uma
+versão do código é, muitas vezes, inviável para o projeto. Para realizar o processo de reversão,
+inicialmente utilizamos o comando $ git reflog. Com esse comando, é possível listar todos os
+commits realizados. Após escolher a versão, basta utilizar o comando $ git reset --hard [commit],
+como demonstrado na figura abaixo
+
+
+
+### criando um novo branch ########
+
+# git branch <nomedonovobranch>
+
+####### trocando de branch ########
+
+# git checkout <nomedobranch>
+
+
+
+######### mesclando os arquivos dos branch's #######
+
+# git merge <nome da branch a ser mesclada>
+
+
+
+
+
+
+
+
+
+
+

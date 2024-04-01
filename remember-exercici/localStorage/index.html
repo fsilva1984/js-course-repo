@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="grid-container">
+        <div class="cadastro">
+            <form>
+                <div class="box-entry">
+                    <label for="_key">Keygen:</label>
+                    <input value="" id="_key" type="text">
+
+                    <label for="name">Name:</label>
+                    <input value="" class="entry" id="name" type="text">
+                    <label for="age">Age:</label>
+                    <input value="" class="entry" id="age" type="number">
+                    <label for="gender">Gender:</label>
+                    <input value="" class="entry" id="gender" type="text">
+                    <label for="admision">Admission:</label>
+                    <input value="" class="entry" id="admission" type="text">
+                    <label for="activeInArea">Active in the Area:</label>
+                    <input value="" class="entry" id="activeInArea" type="text">
+                    <button type="submit" id="sub">try</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="box-info">
+            <label for="input-info">Get info:</label>
+            <input type="text" id="input-info" value="" placeholder="type all to see all keys">
+            <button type="button" id="info">try</button>
+        </div>
+
+        <div class="box-delete">
+            <label for="input-del">Delete info:</label>
+            <input type="text" id="input-del" value="" placeholder="Enter the object key to delete">
+            <button type="reset" id="del">try</button>
+        </div>
+
+        <div id="box-args">
+            <label for="box-args">Details:</label>
+            <ul class="args"></ul>
+        </div>
+
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

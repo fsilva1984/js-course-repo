@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: rgb(59, 60, 61);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/*######## DISPLAY #######################*/
+header {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    border-bottom: 2px solid rgb(255, 68, 0);
+}
+
+.box-screen {
+    width: 100%;
+    height: 55px;
+    padding: 3px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.result {
+    width: 100%;
+    margin: 5px;
+    text-align: end;
+    font-size: 1.8rem;
+}
+
+.screen {
+    font-size: 2.2rem;
+}
+
+/*#########################################*/
+
+/*################ BODY ##################*/
+.body-calc {
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(157, 157, 160);
+}
+
+button {
+    border: 0;
+    width: 100px;
+    height: 75px;
+    font-size: 1.8rem;
+    background-color: rgb(204, 204, 204);
+}
+
+button:hover {
+    cursor: pointer;
+    border-radius: 5px;
+    transform: scale(1.1, 1.1);
+    background-color: rgb(255, 135, 79);
+}
+
+#equal {
+    width: 180px;
+    height: 78px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(20, 120, 252);
+}
+
+.box-btn {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(204, 204, 204);
+}
+
+/*#########################################*/
+
+/*################# MOBILE ################*/
+
+@media (max-width: 450px) {
+    header {
+        width: 100%;
+    }
+
+    .box-screen {
+        height: 75px;
+    }
+
+    .result {
+        font-size: 2.8rem;
+    }
+
+    .screen {
+        font-size: 3.5rem;
+    }
+
+    .body-calc {
+        margin-top: 3px;
+        width: 98%;
+    }
+
+    #shebang {
+        display: none;
+    }
+
+    button {
+        width: 33%;
+        font-size: 2.5rem;
+    }
+
+    #equal {
+        width: 100%;
+        transform: scale(1, 1);
+        font-size: 5rem;
+    }
+
+    #equal:hover {
+        background-color: rgb(0, 70, 161);
+    }
+}
+
+/*#########################################*/

@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* container principal*/
+.grid-constainer {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(400px, 800px) minmax(200px, 1fr);
+    column-gap: 3px;
+    padding: 5px;
+    justify-content: center;
+    border: 3px solid;
+}
+
+.add {
+    border: 1px solid red;
+}
+
+/*form*/
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3px;
+    padding: 5px;
+    border: 1px solid rgb(79, 79, 252);
+}
+
+/* campo de endereco*/
+.fild-adrres {
+    display: grid;
+    padding: 5px;
+    grid-template-rows: auto;
+    border: 1px solid yellow;
+}
+
+.box-search {
+    justify-self: center;
+    border: 1px solid green;
+    padding: 5px;
+}
+
+.adrres {
+    border: 1px solid;
+    height: 40px;
+}

@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    border: none;
+    color: aliceblue;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #222222;
+}
+
+header {
+    padding: 16px;
+    display: grid;
+    border: 1px solid;
+    justify-content: center;
+    background-color: #222222;
+    grid-template-columns: 250px 60px;
+    box-shadow: 1px 1px 1px 0px #000000;
+}
+
+input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+    border-bottom: 2px solid orange;
+}
+
+button {
+    border: none;
+    font-size: large;
+    cursor: pointer;
+    background-color: rgb(31, 141, 231);
+}
+button:active {
+    transform: scale(1.1, 1.1);
+    background-color: rgb(63, 156, 233);
+}
+
+body {
+    background-color: #7f56c5;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.body-app {
+    border: 1px solid;
+    width: 513px;
+    height: 680px;
+    background-color: #222222;
+    box-shadow: 1px 1px 1px 0px #000000;
+}
+
+li {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* dia */
+.img1 {
+    background-image: url('/remember-exercici/createElementHTML/weather-image/ceu-limpo.jpg');
+}
+.img2 {
+    background-image: url('/remember-exercici/createElementHTML/weather-image/dia-nuveins-dispersas.png');
+}
+.img3 {
+    background-image: url('/remember-exercici/createElementHTML/weather-image/dia-nublado.jpg');
+}
+.img4 {
+    background-image: url('/remember-exercici/createElementHTML/weather-image/dia-chuva-fina.png');
+}
+
+/* noite */
+
+.img5 {
+    background-image: url('/remember-exercici/createElementHTML/weather-image/noite-ceu-limpo.jpg');
+}
+.img6 {
+    background-image: url('/remember-exercici/createElementHTML/weather-image/noite-chuva-fina.jpg');
+}
+.img7 {
+    background-image: url('/remember-exercici/createElementHTML/weather-image/noite-chuva-forte.jpg');
+}
+.img8 {
+    background-image: url('/remember-exercici/createElementHTML/weather-image/noite-nublado.jpg');
+}
+
+
+
+@media (max-width: 515px) {
+    header {
+        display: flex;
+    }
+    input {
+        width: 100%;
+        font-size: 2rem;
+        justify-items: auto;
+    }
+    button {
+        width: 40%;
+    }
+    .body-app {
+        width: 100vw;
+    }
+}
