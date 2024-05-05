@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    font-size: 1.2rem;
+    margin-top: 65px;
+}
+.form-control {
+    font-size: 1.2rem;
+}
+.btn {
+    font-size: 1.2rem;
+}
+
+
+
+.success {
+    display: none;
+    color: green;
+}
+.error {
+    display: none;
+    color: red;
+}
+
+.field-empty {
+    display: none;
+    color: tomato;
+}

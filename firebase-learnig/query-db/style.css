@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    width: 100%;
+    margin-top: 55px;
+    text-align: center;
+}
+.box {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    list-style: circle;
+}
+
+.erro {
+    color: tomato;
+    font-size: large;
+}
+
+
+
+[data-js="data-user"] {
+    display: none;
+}
+.show {
+    list-style: circle;
+    color: rgb(19, 126, 220);
+}
+
+
+#not-found {
+    display: none;
+    text-align: center;
+    color: tomato;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
